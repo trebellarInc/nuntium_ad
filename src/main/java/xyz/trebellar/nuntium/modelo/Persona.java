@@ -80,6 +80,14 @@ public class Persona {
         return hash;
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" + "id=" + id + ", nombre=" + nombre + ", apellido1=" + apellido1 + ", apellido2=" + apellido2 + ", fechaNac=" + fechaNac + ", dni=" + dni + ", fechaCreacion=" + fechaCreacion + '}';
+    }
+
+    
+    
+
 
    
     
