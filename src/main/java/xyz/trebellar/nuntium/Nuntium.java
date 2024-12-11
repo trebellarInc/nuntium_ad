@@ -7,7 +7,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import xyz.trebellar.nuntium.dao.Conexion;
 
-
+/**
+ * Desde imac
+ * @author nacho
+ */
 public class Nuntium {
 
     public static void main(String[] args) {
@@ -20,6 +23,7 @@ public class Nuntium {
             Logger.getLogger(Nuntium.class.getName()).log(Level.SEVERE, null, ex);
             System.err.println("Error en la conexión con mssql \n" + ex.getMessage());
         }
+        
         
         
     }
