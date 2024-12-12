@@ -1,4 +1,3 @@
-
 package xyz.trebellar.nuntium.modelo;
 
 import java.time.LocalDate;
@@ -6,29 +5,38 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Objects;
 
-
-
 public class Persona {
+
     private int id;
     private String nombre;
     private String apellido1;
     private String apellido2;
     private LocalDate fechaNac;
     private String dni;
-    
-    
+
     private LocalDateTime fechaCreacion;
 
-    public Persona(String nombre, String apellido1) {
+    public Persona() {
+    }
+
+    public Persona(String nombre, String apellido1, String apellido2) {
         this.nombre = nombre;
         this.apellido1 = apellido1;
+        this.apellido2 = apellido2;
     }
 
     public int getId() {
         return id;
     }
 
-   
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFechaCreacion(LocalDateTime fechaCreacion) {
+        this.fechaCreacion = fechaCreacion;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -85,15 +93,4 @@ public class Persona {
         return "Persona{" + "id=" + id + ", nombre=" + nombre + ", apellido1=" + apellido1 + ", apellido2=" + apellido2 + ", fechaNac=" + fechaNac + ", dni=" + dni + ", fechaCreacion=" + fechaCreacion + '}';
     }
 
-    
-    
-
-
-   
-    
-    
-    
-    
-    
-    
 }

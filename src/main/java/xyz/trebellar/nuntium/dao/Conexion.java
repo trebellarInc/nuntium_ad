@@ -12,7 +12,7 @@ public class Conexion {
     private static final String BASEDATOS = "nuntium";
     private static final String URL = "jdbc:sqlserver://pon-crb.duckdns.org:1433;database=" + BASEDATOS + ";user=" + USUARIO + ";password=" + CONTRASINAL + ";trustServerCertificate=true;";
 
-    public static Connection getConexion() throws SQLException {
+    public static Connection obtenerConexion() throws SQLException {
         return DriverManager.getConnection(URL);
     }
 
